@@ -1,0 +1,5 @@
+uri=Primary = 'https://********.blob.core.windows.net/test'; Secondary = 'https://********-secondary.blob.core.windows.net/test'
+sas=sig=********&se=2018-02-13T07%3A12%3A52Z&sv=2017-04-17&sp=racwdl&sr=c
+Uploaded: test.txt
+Downloaded: test.txt
+Now=2018-02-13T06:12:52.981Z

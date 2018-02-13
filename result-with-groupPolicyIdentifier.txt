@@ -1,0 +1,12 @@
+uri=Primary = 'https://********.blob.core.windows.net/test'; Secondary = 'https://********-secondary.blob.core.windows.net/test'
+sas=sig=********&se=2018-02-13T07%3A11%3A33Z&sv=2017-04-17&si=grouppolicy&sp=racwdl&sr=c
+Exception in thread "main" com.microsoft.azure.storage.StorageException: Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.
+	at com.microsoft.azure.storage.StorageException.translateException(StorageException.java:89)
+	at com.microsoft.azure.storage.core.StorageRequest.materializeException(StorageRequest.java:315)
+	at com.microsoft.azure.storage.core.ExecutionEngine.executeWithRetry(ExecutionEngine.java:175)
+	at com.microsoft.azure.storage.blob.CloudBlockBlob.uploadFullBlob(CloudBlockBlob.java:883)
+	at com.microsoft.azure.storage.blob.CloudBlockBlob.upload(CloudBlockBlob.java:713)
+	at com.microsoft.azure.storage.blob.CloudBlob.uploadFromByteArray(CloudBlob.java:1726)
+	at com.microsoft.azure.storage.blob.CloudBlockBlob.uploadText(CloudBlockBlob.java:1176)
+	at com.microsoft.azure.storage.blob.CloudBlockBlob.uploadText(CloudBlockBlob.java:1146)
+	at test.SasTest.main(SasTest.java:88)
